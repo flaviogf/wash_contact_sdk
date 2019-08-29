@@ -1,0 +1,24 @@
+{
+  "name": "wash-landingpage-sdk",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/flaviogf/wash_landingpage_sdk.git",
+  "author": "flaviogf <flavio.fernandes6@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/register": "7.5.5",
+    "chai": "4.2.0",
+    "eslint": "6.2.2",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "mocha": "6.2.0",
+    "node-fetch": "2.6.0",
+    "sinon": "7.4.1"
+  },
+  "scripts": {
+    "test": "mocha --require @babel/register tests/**/*.spec.js"
+  }
+}

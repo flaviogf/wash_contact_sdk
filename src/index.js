@@ -1,1 +1,5 @@
-export * from './contact'
+import { Contact } from './contact'
+
+export default {
+  Contact
+}

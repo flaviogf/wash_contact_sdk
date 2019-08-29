@@ -4,12 +4,12 @@ import sinon from 'sinon'
 
 import fetch from 'node-fetch'
 
-import { Contact } from '../src'
+import { Contact } from '../src/contact'
 
 global.fetch = fetch
 
 describe('Contact', () => {
-  const url = 'https://backend.appwash.net/landingpage/api/v1/contacts'
+  const url = 'https://backend.appwash.net/landingpage/api/v1/contact'
 
   const response = {
     json: () => ({ data: 'xpto', errors: [] })
@@ -51,7 +51,13 @@ describe('Contact', () => {
 
       Contact.create(contact)
 
-      expect(stub.calledWith(url, { method: 'POST', body: contact })).to.be.true
+      const options = {
+        method: 'POST',
+        body: JSON.stringify(contact),
+        headers: { 'Content-Type': 'application/json' }
+      }
+
+      expect(stub.calledWith(url, options)).to.be.true
     })
   })
 })

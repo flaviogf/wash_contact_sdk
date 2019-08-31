@@ -1,6 +1,6 @@
 {
   "name": "wash-landingpage-sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "repository": "https://github.com/flaviogf/wash_landingpage_sdk.git",
   "author": "flaviogf <flavio.fernandes6@gmail.com>",

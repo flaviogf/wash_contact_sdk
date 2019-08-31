@@ -32,16 +32,10 @@ describe('Mask', () => {
       expect(Mask.phone).to.be.a('function')
     })
 
-    it('should add "(" when 1 digit is passed', () => {
-      const result = Mask.phone('1')
+    it('should add "()" when 3 digits is passed', () => {
+      const result = Mask.phone('111')
 
-      expect(result).to.be.equal('(1')
-    })
-
-    it('should add ")" when 2 digit is passed', () => {
-      const result = Mask.phone('11')
-
-      expect(result).to.be.equal('(11) ')
+      expect(result).to.be.equal('(11) 1')
     })
 
     it('should add "-" when 7 digits is passed', () => {
@@ -66,6 +60,12 @@ describe('Mask', () => {
       const result = Mask.phone('1199998888')
 
       expect(result).to.be.equal('(11) 9999-8888')
+    })
+
+    it('should maks limit max digits in 11 digits', () => {
+      const result = Mask.phone('11999998888777')
+
+      expect(result).to.be.equal('(11) 99999-8888')
     })
   })
 })

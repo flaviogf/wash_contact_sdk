@@ -1,4 +1,4 @@
-const API_URL = 'https://backend.appwash.net/landingpage/api/v1/contact'
+const API_URL = 'https://backend.appwash.net/contact/api/v1/contacts'
 
 const headers = {
   'Content-Type': 'application/json'

@@ -1,3 +1,3 @@
-# Wash landingpage sdk
+# Wash contact sdk
 
-Wash landingpage sdk.
+Wash contact sdk.

@@ -68,4 +68,16 @@ describe('Mask', () => {
       expect(result).to.be.equal('(11) 99999-8888')
     })
   })
+
+  describe('unmask', () => {
+    it('should has unmask method', () => {
+      expect(Mask.unmask).to.be.a('function')
+    })
+
+    it('should unmask value', () => {
+      const result = Mask.unmask('(16) 99999-9999')
+
+      expect(result).to.be.equal('16999999999')
+    })
+  })
 })

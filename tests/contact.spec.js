@@ -9,7 +9,7 @@ import { Contact } from '../src/contact'
 global.fetch = fetch
 
 describe('Contact', () => {
-  const url = 'https://backend.appwash.net/landingpage/api/v1/contact'
+  const url = 'https://backend.appwash.net/contact/api/v1/contacts'
 
   const response = {
     json: () => ({ data: 'xpto', errors: [] })
